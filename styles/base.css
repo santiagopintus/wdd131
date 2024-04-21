@@ -1,0 +1,178 @@
+/* VARS */
+:root {
+  /* COLORS */
+  --black: #12130f;
+  --primary: #8fcb9b;
+  --secondary: #5b9279;
+  --white: #eae6e5;
+  --accent: #8f8073;
+  /* BORDER */
+  --b-radius: 8px;
+  --border: 1px solid var(--secondary);
+  /* PADDING */
+  --padding-sm: 16px;
+  --padding-md: 24px;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Nunito Sans", sans-serif;
+  color: var(--black);
+  background-color: var(--white);
+  margin: 0;
+}
+
+/* HEADINGS MOBILE*/
+h1 {
+  font-size: 24px;
+}
+h2 {
+  font-size: 20px;
+}
+p {
+  font-size: 16px;
+}
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+}
+
+/* HELPERS */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* LAYOUT STYLES BY SECTIONS */
+header.main-header {
+  background-color: var(--primary);
+  padding: var(--padding-sm) 0;
+}
+
+.main-header h1 {
+  text-align: center;
+}
+.main-header h1 span {
+  font-weight: 900;
+}
+
+nav.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav.navigation a {
+  border-radius: var(--b-radius);
+  color: var(--black);
+  text-decoration: none;
+  padding: 5px;
+  transition: background-color 200ms ease;
+  font-weight: 700;
+}
+nav.navigation a:hover {
+  background-color: var(--secondary);
+}
+
+/* MAIN CONTENT */
+.main-content {
+  margin-top: 24px;
+}
+.main-content .card {
+  border-radius: var(--b-radius);
+  border: var(--border);
+  margin: 10px 0;
+}
+.main-content .card .card-header {
+  background-color: var(--primary);
+  padding: 10px;
+}
+.main-content .card .card-header h2 {
+  text-align: center;
+  margin: 0;
+}
+.main-content .card .card-body {
+  padding: 16px;
+}
+/* ABOUT ME (first section) */
+.about-me img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  width: 160px;
+  height: auto;
+}
+/* ABOUT CITY (second section) */
+.about-city h3 {
+  text-align: center;
+  border-bottom: var(--border);
+}
+.about-city figure {
+  max-width: 100%;
+}
+.about-city figure img {
+  width: 100%;
+  height: auto;
+}
+.about-city figure figcaption {
+  font-style: italic;
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--primary);
+  padding: var(--padding-sm);
+  text-align: center;
+}
+footer #lastModified {
+  font-style: italic;
+}
+
+/* DESKTOP ONLY */
+@media only screen and (min-width: 768px) {
+  /* HEADER */
+  header.main-header {
+    padding: var(--padding-md) 0;
+  }
+
+  nav.navigation {
+    justify-content: center;
+    gap: var(--padding-sm);
+  }
+  nav.navigation a {
+    font-size: 18px;
+    padding: 5px 10px;
+  }
+
+  .main-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 16px;
+  }
+  .about-me {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+  }
+  .about-city .description {
+    display: flex;
+  }
+  .about-city .description figure {
+    flex: 1;
+  }
+  .about-city .description .description-text {
+    flex: 2;
+  }
+
+}

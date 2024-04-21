@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Santiago Pintus" />
+    <meta
+      name="description"
+      content="WDD 131 - Dynamic Web Fundamentals: Site built as an assignment by Santiago Alejandro Pintus"
+    />
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/base.css" />
+    <script src="scripts/getdates.js" defer></script>
+
+    <title>WDD 131 - Dynamic Web Fundamentals - Santiago Pintus</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <h1>
+          WDD 131 - Dynamic Web Fundamentals - <span>Santiago A. Pintus</span>
+        </h1>
+        <nav class="navigation">
+          <a href="https://www.linkedin.com/in/santiagopintus/" target="_blank"
+            >LinkedIn</a
+          >
+          <a href="https://byui.instructure.com/" target="_blank">I-Learn</a>
+          <a
+            href="https://www.churchofjesuschrist.org/study/scriptures/bofm/hel/5?lang=eng&id=p12#p12"
+            target="_blank"
+            >Scripture</a
+          >
+          <a href="#">Final Project</a>
+        </nav>
+      </div>
+    </header>
+    <main class="main-content container">
+      <section class="card main-card">
+        <div class="card-header"><h2>About Me</h2></div>
+        <div class="card-body">
+          <div class="about-me">
+            <img
+              src="images/santiago-pintus.jpg"
+              alt="Santiago Pintus' profile picture"
+            />
+            <p>
+              Hi! I'm Santiago, but I prefer Santi. I live in Buenos Aires known
+              as "La ciudad del tango" because it's the world capital of tango.
+              I live with my wife Evelyn, and I'm currently working as a
+              Frontend Developer in an Economic Sciences Publishing House. I
+              love coding and technology in general. In my free time, I enjoy
+              playing Table Tennis and carpentry.
+            </p>
+          </div>
+          <div class="about-city">
+            <h3>Buenos Aires, Argentina</h3>
+            <div class="description">
+              <figure>
+                <img src="images/flag.webp" alt="Argentinian Flag" />
+                <figcaption>Official Argentinian Flag</figcaption>
+              </figure>
+              <div class="description-text">
+                <p>
+                  We are “Porteños,” the people of the port. We have immigrant
+                  blood, we are passionate, we give big embraces and we always
+                  greet with a kiss. Our tables are always crowded with friends,
+                  uncles and aunts, cousins, children, brothers and sisters, and
+                  we talk – perhaps sometimes argue – for hours. We express our
+                  emotions with enviable ease.
+                </p>
+                <p>
+                  We are made of contrasts: between popular culture and
+                  sophisticated culture, between the traditional and the modern,
+                  between old religions and modern idols, and our city is full
+                  of life and intensity, enriched with stories that are shared
+                  and entwined.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="card resources-card">
+        <div class="card-header">
+          <h2>Web Dev Resources</h2>
+        </div>
+        <div class="card-body">
+          <ul class="resources-links">
+            <li>
+              <a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a>
+            </li>
+            <li><a href="https://codepen.io/">Codepen</a></li>
+            <li><a href="https://web.dev/">Web Dev</a></li>
+            <li><a href="https://www.codecademy.com/">Codecademy</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        &copy;<span id="currentYear"></span> ⭐ Santiago Alejandro Pintus ⭐
+        Argentina
+      </p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>
